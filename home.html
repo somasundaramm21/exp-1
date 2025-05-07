@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Static To-Do List with Navigation</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">To-Do App</div>
+        <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#tasks">Tasks</a></li>
+        </ul>
+        </nav>
+        <div class="todo-container">
+        <h1>My To-Do List</h1>
+        <div class="input-section">
+        <input type="text" placeholder="Add a new task..." disabled>
+        <button>Add</button>
+        </div>
+        <ul>
+        <li>
+        <span>Finish project report</span>
+        <button class="delete-btn">Delete</button>
+        </li>
+        </ul>
+        </div>
+        
+</div>
+<ul>
+<li>
+<span>Finish project report</span>
+<button class="delete-btn">Delete</button>
+</li>
+</ul>
+</div>
+</main>
+</body>
+</html>
+
+<style>
+    * {
+    margin: 0; padding: 0; box-sizing: border-box;
+    }
+    .logo { font-size: 1.8rem; font-weight: bold; color: rgb(116, 7, 7);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    } main {
+    max-width: 600px; margin: 2rem auto; padding: 0 1rem;
+    }
+    .todo-container { background: rgb(210, 207, 207); padding: 2rem; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;
+    }
+    .todo-container:hover { transform: translateY(-5px);
+    }
+    h1 {
+    text-align: center; color: #01579b; } input[type="text"] { flex: 1; padding: 0.8rem; border: 2px solid #0288d1; border-radius: 5px; font-size: 1rem; margin-right: 1rem;
+    }
+    input[type="text"]:focus {
+    border-color: #01579b; outline: none; } button {
+    padding: 0.8rem 1.5rem; border: none; background: #28a745; color: white; border-radius: 5px; font-size: 1rem; cursor: not-allowed; transition: background 0.3s ease;
+    } button:hover {
+    background: #218838; } ul {
+    list-style: none; } li {
+    display: flex; justify-content: space-between; align-items: center; padding: 0.8rem; border-bottom: 1px solid #ddd;
+    }
+    .completed { text-decoration: line-through; color: #888;
+    }
+    .delete-btn { background: #dc3545; padding: 0.5rem 1rem; border: none; color: white; border-radius: 5px;
+    }
+    body {
+font-family: 'Arial', sans-serif;
+} nav {
+max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem;
+}
+.nav-links { display: flex; list-style: none;
+}
+.nav-links li { margin-left: 2rem;
+}
+.nav-links a { color: white; text-decoration: none; font-size: 1.1rem; letter-spacing: 0.5px; padding: 0.5rem 1rem; border-radius: 5px; transition: background 0.3s ease, transform 0.2s ease;
+}
+.nav-links a:hover { background: rgba(255, 255, 255, 0.2); transform: translateY(-2px);
+}
+.nav-links a.active { background: #01579b; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.delete-btn:hover { background: #c82333;
+}
+
+    
+    </style>
+    
